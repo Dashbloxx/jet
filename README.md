@@ -6,3 +6,19 @@ It is very easy to use this python script. Simply open up a terminal at the same
 python3 jet.py <ip-address>
 ```
 Replace `<ip-address>` with the IP address you desire to input. It will return information of the IP address you chose...
+
+## Practical way to use
+The most practical way to use jet.py, is to install it as a binary. To do this, simply run the command:
+```
+sudo ./install.sh
+```
+Then you can use jet.py in a more comfortable way:
+```
+jet <ip-address>
+```
+What if you want to uninstall jet.py? Just rrun the command:
+```
+sudo ./uninstall.sh
+```
+## Other info
+If you liked this project, consider starring this repository on GitHub.

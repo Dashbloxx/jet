@@ -1,3 +1,4 @@
+#!/bin/python3
 import sys
 import urllib.request
 import json
@@ -28,10 +29,10 @@ def sl(txt):
 
 if(len(sys.argv) == 1):
 	sm("Error:\t" + bcolors.FAIL + "You haven't specified any arguments!")
-	sm("Usage:\t" + bcolors.WARNING + "python3 jet.py <ip-address>")
+	sm("Usage:\t" + bcolors.WARNING + "python3 jet.py <ip-address> " + bcolors.FAIL + "OR " + bcolors.WARNING + "jet <ip-address>")
 elif(len(sys.argv) > 2):
 	sm("Error:\t" + bcolors.FAIL + "You have specified way too many arguments!")
-	sm("Usage:\t" + bcolors.WARNING + "python3 jet.py <ip-address>")
+	sm("Usage:\t" + bcolors.WARNING + "python3 jet.py <ip-address> " + bcolors.FAIL + "OR " + bcolors.WARNING + "jet <ip-address>")
 else:
 	ipinfodata = json.loads(urllib.request.urlopen("https://ipinfo.io/" + sys.argv[1] + "/json").read())
 	
